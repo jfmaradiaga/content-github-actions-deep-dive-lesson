@@ -47,6 +47,8 @@ jobs:
           
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: create release
         uses: actions/create-release@v1

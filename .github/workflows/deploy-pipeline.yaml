@@ -69,6 +69,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: ./${{ github.sha }}.zip
+          tag_name: "latest"
+          name: "Latest Release"
+          prerelease: false
 
           
           
